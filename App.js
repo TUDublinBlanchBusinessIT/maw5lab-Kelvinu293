@@ -1,15 +1,16 @@
-import { StyleSheet, View, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, Image, Dimensions, Switch } from 'react-native';
 import Swiper from 'react-native-swiper';
 import PersonalInfo from './components/PersonalInfo';
-
+import MovieBooking from './components/MovieBooking';
 
 export default function App() {
   
   return (
     <View style={styles.screencontainer}>
-      <View style={styles.imgview}><Image source={require('./assets/moviesV3.png')}/></View>
+      <View style={styles.imgview}><Image source={require('./assets/war.jpg')}/></View>
       <Swiper showsButtons={true}>
           <PersonalInfo screenstyle={styles.screen}/>
+          <MovieBooking screenstyle={styles.screen}/>
       </Swiper>
     </View>
   )
@@ -35,3 +36,4 @@ const styles = StyleSheet.create({
   }
 
 });
+

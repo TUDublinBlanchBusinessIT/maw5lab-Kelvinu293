@@ -3,6 +3,7 @@ import {Picker} from '@react-native-picker/picker';
 import Slider from '@react-native-community/slider';
 import DatePicker from '../components/DatePicker';
 
+
 import {useState} from 'react';
 
 export default function MovieBooking({screenstyle}) {
